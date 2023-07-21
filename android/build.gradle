@@ -1,0 +1,51 @@
+apply from: "config.gradle"
+
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        maven {url 'https://maven.aliyun.com/repository/public'}
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+        maven { url 'http://maven.nse.cn/repository/mob/' }// 本地maven
+        maven { url 'http://52.83.246.145:8082/repository/android/'}
+
+        mavenLocal()
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath 'com.bytedance.applog:RangersAppLog-All-plugin:5.4.0'//埋点
+        classpath 'com.volcengine:apm_insight_plugin:1.3.7'//APM
+    }
+}
+
+allprojects {
+    repositories {
+        maven {url 'https://maven.aliyun.com/repository/public'}
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+        maven { url 'http://maven.nse.cn/repository/mob/' }// 本地maven
+        maven { url 'http://52.83.246.145:8082/repository/android/'}
+
+        mavenLocal()
+        google()
+        jcenter()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

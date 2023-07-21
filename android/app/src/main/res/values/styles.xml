@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             Flutter draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <!-- Theme applied to the Android Window as soon as the process has started.
+         This theme determines the color of the Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+         
+         This Theme is only used starting with V2 of Flutter's Android embedding. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+
+    <!-- Base application theme. -->
+<style name="AppTheme" parent="AppTheme.Base">
+<!-- Customize your theme here. -->
+<item name="colorPrimary">@color/comm_boot_bg_default_blue</item>
+<item name="colorPrimaryDark">@color/comm_boot_bg_default_blue</item>
+<item name="colorAccent">@color/comm_boot_bg_default_blue</item>
+<item name="colorControlNormal">@color/comm_boot_checkbox_normal</item>
+<item name="colorControlActivated">@color/comm_boot_bg_default_blue</item>
+<item name="comm_page_bg">@color/comm_boot_page_bg</item>
+<item name="comm_text_h1">@color/comm_boot_text_h1_blank</item>
+<item name="comm_text_h2">@color/comm_boot_text_h2_blank</item>
+<item name="comm_text_h3">@color/comm_boot_text_h3_blank</item>
+<item name="comm_toolbar_bg">@color/comm_boot_page_bg</item>
+<item name="comm_toolbar_back_color">@color/comm_boot_toolbar_back_color</item>
+<item name="comm_button_normal_color_start">@color/comm_boot_bg_default_blue</item>
+<item name="comm_button_normal_color_end">@color/comm_boot_bg_default_blue</item>
+<item name="comm_button_disable_color">@color/comm_boot_bg_disabled_blue</item>
+<item name="comm_checkbox_normal_color">@color/comm_boot_checkbox_normal</item>
+<item name="comm_checkbox_checked_color">@color/comm_boot_bg_default_blue</item>
+<item name="comm_checkbox_disable_color">@color/comm_boot_bg_default_blue</item>
+</style>
+<style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+<item name="android:windowBackground">@android:color/white</item>
+</style>
+</resources>

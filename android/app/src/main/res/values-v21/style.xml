@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/comm_boot_bg_default_blue</item>
+        <item name="colorPrimaryDark">@color/comm_boot_bg_default_blue</item>
+        <item name="colorAccent">@color/comm_boot_bg_default_blue</item>
+        <item name="colorControlNormal">@color/comm_boot_checkbox_normal</item>
+        <item name="colorControlActivated">@color/comm_boot_bg_default_blue</item>
+        <item name="comm_page_bg">@color/comm_boot_page_bg</item>
+        <item name="comm_text_h1">@color/comm_boot_text_h1_blank</item>
+        <item name="comm_text_h2">@color/comm_boot_text_h2_blank</item>
+        <item name="comm_text_h3">@color/comm_boot_text_h3_blank</item>
+        <item name="comm_toolbar_bg">@color/comm_boot_page_bg</item>
+        <item name="comm_toolbar_back_color">@color/comm_boot_toolbar_back_color</item>
+        <item name="comm_button_normal_color_start">@color/comm_boot_bg_default_blue</item>
+        <item name="comm_button_normal_color_end">@color/comm_boot_bg_default_blue</item>
+        <item name="comm_button_disable_color">@color/comm_boot_bg_disabled_blue</item>
+        <item name="comm_checkbox_normal_color">@color/comm_boot_checkbox_normal</item>
+        <item name="comm_checkbox_checked_color">@color/comm_boot_bg_default_blue</item>
+        <item name="comm_checkbox_disable_color">@color/comm_boot_bg_default_blue</item>
+    </style>
+</resources>
